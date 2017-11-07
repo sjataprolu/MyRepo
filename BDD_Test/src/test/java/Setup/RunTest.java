@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resource/features",glue = {"StepDefinition"},tags = {"@Runthistest"},
-        format = {"json:target/cucumber.json\",\"html:target/cucumber-pretty"})
+@CucumberOptions(features = "src/test/java/features",glue = {"StepDefinition"},tags = {"@Runthistest"},
+        format = {"html:target/cucumber-pretty"})
 public class RunTest {
 }

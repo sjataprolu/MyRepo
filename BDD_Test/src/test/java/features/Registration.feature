@@ -3,7 +3,7 @@ Feature: Registring new accounts to www.mendely.com
   @Runthistest
   Scenario: To register new account with one account
     Given I am on "https://www.mendeley.com" to register new account
-    And I enter email as "test@xmail.com"
+    And I enter email as "test@zmail.com"
     And I enter "test" as given name,"tester" as first name,"tester1" as password
     When I click Register
     Then I should see "You are registered" message
